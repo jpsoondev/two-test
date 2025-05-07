@@ -1,0 +1,121 @@
+#logo {
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.brand-text {
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
+    margin: 0;
+    padding: 0;
+    white-space: nowrap;
+}
+
+#clinic1 {
+    color: black;
+}
+
+#sync1 {
+    color: blue;
+}
+
+#navbarNav {
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+#navbarNav.show {
+    display: block;
+}
+
+.navbar-nav .nav-link {
+    color: #847272;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: blue;
+}
+
+.d-flex #signUp {
+    border: none;
+    background-color: transparent;
+    color: #847272;
+}
+
+.d-flex #signUp:hover {
+    color: blue;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+/* Mobile-specific adjustments */
+@media (max-width: 991px) {
+    #navbarNav {
+        position: fixed; /* Fix the menu to the viewport */
+        top: 50%; /* Center vertically */
+        left: 50%; /* Center horizontally */
+        transform: translate(-50%, -50%); /* Adjust for centering */
+        width: auto; /* Adjust width to fit content */
+        text-align: center; /* Center the text */
+        background-color: white; /* Optional: Add a background color */
+        z-index: 1050; /* Ensure it appears above other elements */
+        display: none; /* Initially hidden */
+        padding: 10px; /* Add some padding for spacing */
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add shadow */
+        border-radius: 8px; /* Add rounded corners */
+    }
+
+    .brand-text{
+        margin-left: -10px;
+    }
+
+    #navbarNav.show {
+        display: flex; /* Show the menu when toggled */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        gap: 15px; /* Add spacing between items */
+    }
+
+    .navbar-nav {
+        display: flex;
+        flex-direction: column; /* Stack nav items vertically */
+        align-items: center; /* Center nav items horizontally */
+        gap: 10px; /* Add spacing between nav items */
+    }
+
+    .navbar-nav .nav-link {
+        font-size: 1rem; /* Adjust font size for better readability */
+        color: #847272; /* Default color */
+        transition: color 0.3s ease, text-decoration 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+        color: blue; /* Change color on hover */
+    }
+
+    .d-flex {
+        display: flex;
+        flex-direction: row; /* Place buttons in one line */
+        justify-content: center; /* Center buttons horizontally */
+        gap: 10px; /* Add spacing between buttons */
+    }
+
+    .d-flex .btn {
+        font-size: 0.9rem; /* Adjust button font size */
+        padding: 8px 16px; /* Adjust button padding */
+    }
+}
+
+
+
+
+
+

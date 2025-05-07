@@ -1,0 +1,80 @@
+/* General Styles */
+body {
+    background-color: #f8f9fa; /* Light background */
+}
+
+/* Card Styling */
+.sign-in-card {
+    max-width: 400px; /* Limit the width */
+    width: 100%; /* Full width for responsiveness */
+    border-radius: 15px; /* Rounded corners */
+    height: auto; /* Adjust height automatically */
+}
+
+/* Input Group Styling */
+.input-group-text {
+    background-color: #f8f9fa; /* Light background for icons */
+    border: none; /* Remove border */
+}
+
+.input-group .form-control {
+    border-left: none; /* Remove left border for seamless design */
+}
+
+/* Button Styling */
+.btn-primary {
+    background-color: #007bff; /* Primary blue */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Social Buttons */
+.btn-light {
+    background-color: #f8f9fa; /* Light background */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.btn-light:hover {
+    background-color: #e9ecef; /* Slightly darker on hover */
+}
+
+/* Support Links */
+.text-primary {
+    text-decoration: none; /* Remove underline */
+}
+
+.text-primary:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 991px) {
+    .sign-in-card {
+        padding: 20px; /* Reduce padding for smaller screens */
+        height: auto; /* Adjust height automatically */
+    }
+
+    .sign-in-card img {
+        width: 40px; /* Reduce the size of the shield icon */
+    }
+
+    .sign-in-card h4 {
+        font-size: 1.2rem; /* Reduce font size */
+    }
+
+    .sign-in-card p {
+        font-size: 0.9rem; /* Reduce font size for text */
+    }
+
+    .btn-primary {
+        font-size: 0.9rem; /* Reduce button font size */
+    }
+
+    .btn-light {
+        font-size: 0.8rem; /* Reduce social button font size */
+    }
+}

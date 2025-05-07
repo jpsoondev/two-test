@@ -1,0 +1,126 @@
+.about-title {
+    font-size: 2rem;
+    font-weight: medium;
+    color: black;
+    margin-top: 50px;
+}
+.about-title2 {
+    font-size: 2rem;
+    font-weight: medium;
+    color: black;
+}
+.about-description {
+    margin-top: 40px;
+    color: #847272;
+    margin-bottom: 130px;
+}
+.story-title {
+    font-weight: medium;
+    color: black;
+    margin-bottom: 20px;
+}
+.story-description {
+    font-size: 1rem;
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+.stats {
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-top: 20px;
+}
+.stat-item h4 {
+    font-size: 1.5rem;
+    font-weight: medium;
+    color: #2B63B7;
+}
+.stat-item {
+    font-size: 1rem;
+    text-align: center;
+    flex: 1;
+    color: #847272;
+}
+.about-placeholder {
+    background-color: #f8faff;
+    height: 300px;
+    border-radius: 10px;
+}
+.container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+.creators-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+}
+.creator-card {
+    margin-top: 20px;
+    align-items: center;
+}
+.creator-avatar {
+    background-color: #d9d9d9;
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 10px;
+}
+.creator-name {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000;
+}
+.creator-role {
+    font-size: 0.9rem;
+    color: #847272;
+}
+.about-story-section{
+    background-color: #f8faff;
+    padding-top: 20px;
+    margin-top: -150px;
+}
+
+.cta-section {
+    background-color: #007bff;
+}
+
+.cta-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cta-description {
+    font-size: 1rem;
+    color: #e9ecef;
+}
+
+.cta-buttons .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.cta-buttons .btn-primary:hover {
+    background-color: black;
+    border-color: black;
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+
+.cta-buttons .btn-dark {
+    background-color: rgb(59, 212, 59);
+    border-color:  rgb(59, 212, 59);
+    font-size: 1rem;
+    padding: 10px 20px;
+}
+.cta-buttons .btn-dark:hover {
+    background-color: #000;
+    color: #fff;
+}
+@media (max-width: 991px){
+    .about-title {
+        margin-bottom: 0px;
+    }
+}

@@ -1,0 +1,87 @@
+.homepage {
+    background-color: #f8faff;
+    padding: 150px 0;
+}
+
+.homepage-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+.homepage-description {
+    font-size: 1.1rem;
+    color: #847272;
+    margin-bottom: 30px;
+}
+
+.homepage-buttons .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.homepage-buttons .btn-outline-primary {
+    border-color: #007bff;
+    color: #007bff;
+    padding: 10px 20px;
+    font-size: 1rem;
+}
+
+.homepage-buttons .btn-outline-primary:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.homepage-placeholder {
+    background-color: #d9d9d9;
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+}
+@media (max-width: 992px){
+    .homepage-placeholder{
+        margin-top: 30px;
+    }
+}
+/* Sidebar container for mobile */
+.services-sidebar {
+    background-color: #f8f9fa; /* Light background */
+    border-right: 1px solid #ddd; /* Optional: Add a border */
+    padding: 15px; /* Add padding */
+    width: 100%; /* Full width for mobile */
+}
+
+/* Sidebar collapse behavior */
+@media (max-width: 991px) {
+    .services-sidebar {
+        display: none; /* Hide sidebar by default */
+    }
+
+    .services-sidebar.collapse.show {
+        display: block; /* Show sidebar when toggled */
+    }
+}
+
+.clinic-toggler {
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+/* Hover effect for the toggle button */
+.clinic-toggler:hover {
+    background-color: #0056b3;
+}

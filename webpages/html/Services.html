@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClinicSync</title>
+    <link rel="stylesheet" href="../css/Services.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+</head>
+<body>
+    <div id="navbar-container"></div>
+
+    <div class="services-container d-flex">
+        <button class="navbar-toggler me-3" type="button" data-bs-toggle="collapse" data-bs-target="#clinicNavbar" aria-controls="clinicNavbar" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div id = "available-clinics"class="services-sidebar p-3">
+            <h5 class="fw-bold mb-4">Avaible Clinics</h5>
+            <ul class="list-unstyled">
+                <li class="service-item active">
+                    <img id="icon-services" src="../Clinic Icons/medical-team.png">ClinicSync
+                </li>
+                <li class="service-item">
+                    <img id="icon-services" src="../Clinic Icons/heart (2).png">HeartCare
+                </li>
+                <li class="service-item">
+                    <img id="icon-services" src="../Clinic Icons/brain.png">NeuroSync
+                </li>
+                <li class="service-item">
+                    <img id="icon-services" src="../Clinic Icons/pediatric.png">KidsCare
+                </li>
+                <li class="service-item">
+                   <img  id="icon-services" src="../Clinic Icons/dental-care.png">OneDental
+                </li>
+            </ul>   
+        </div>
+
+        <div class="services-content p-4">
+            <h3 class="fw-bold">ClinicSync Services</h3>
+            <p class="text-muted">Expert care for your child's health and development</p>
+            <div class="service-info mb-4">
+                <p><i class="bi bi-calendar-check me-2"></i>Available: Monday - Saturday</p>
+                <p><i class="bi bi-clock me-2"></i>Consultation Hours: 9:00 AM - 5:00 PM</p>
+                <p><i class="bi bi-people me-2"></i><a href="#" class="text-primary">4 Specialist Doctors Available</a></p>
+            </div>
+
+            <h5 class="fw-bold">Available Doctors</h5>
+            <div class="row mb-4">
+                <div class="col-md-3">
+                    <div class="doctor-card text-center p-3">
+                        <div class="doctor-photo mb-2"></div>
+                        <h6 class="fw-bold">Dr. John Doe</h6>
+                        <p class="text-muted small">Pediatric Specialist</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="doctor-card text-center p-3">
+                        <div class="doctor-photo mb-2"></div>
+                        <h6 class="fw-bold">Dr. Jane Smith</h6>
+                        <p class="text-muted small">Pediatric Specialist</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="doctor-card text-center p-3">
+                        <div class="doctor-photo mb-2"></div>
+                        <h6 class="fw-bold">Dr. Alice Brown</h6>
+                        <p class="text-muted small">Pediatric Specialist</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="doctor-card text-center p-3">
+                        <div class="doctor-photo mb-2"></div>
+                        <h6 class="fw-bold">Dr. Alice Brown</h6>
+                        <p class="text-muted small">Pediatric Specialist</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="appointment-options p-3">
+                        <h6 class="fw-bold mb-3">Our Services</h6>
+                        <ul class="list-unstyled">
+                            <li class="option-item active">General Check-up </li>
+                            <li class="option-item">Vaccination</li>
+                            <li class="option-item">Growth Monitoring</li>
+                            <li class="option-item">Consultation</li>
+                            <li class="option-item">Deworming</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-8">
+                    <div class="appointment-form p-3">
+                        <h5 class="fw-bold">Schedule Appointment</h5>
+                        <form>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="child-name" class="form-label small">Patient's Name</label>
+                                    <input type="text" id="child-name" class="form-control form-control-sm" placeholder="Enter Patient's Name">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="child-age" class="form-label small">Age</label>
+                                    <input type="number" id="child-age" class="form-control form-control-sm" placeholder="Enter Patient's Age">
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-md-6">
+                                    <label for="preferred-date" class="form-label small">Preferred Date</label>
+                                    <input type="date" id="preferred-date" class="form-control form-control-sm">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="preferred-time" class="form-label small">Preferred Time</label>
+                                    <select id="preferred-time" class="form-select form-select-sm">
+                                        <option>Morning (9AM - 12PM)</option>
+                                        <option>Afternoon (1PM - 5PM)</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="reason" class="form-label small">Reason for Visit</label>
+                                <textarea id="reason" class="form-control form-control-sm" rows="3" placeholder="Please describe the reason for your visit"></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-sm w-100">Schedule Appointment</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../javascript/Services.js"></script>
+
+</body>
+</html>
